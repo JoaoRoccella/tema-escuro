@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="light">
+<html lang="pt-br" data-theme="claro">
 
 <head>
     <meta charset="UTF-8">
@@ -21,19 +21,23 @@
     </button>
 
     <script>
-        
+        const elRaiz = document.documentElement;
+
+        const temaAtual = localStorage.getItem('data-theme') ? localStorage.getItem('data-theme') : 'claro';
+
+        elRaiz.setAttribute('data-theme', temaAtual);
+
         document.querySelector('#btnAlterarTema').addEventListener('click', () => {
 
-            const elRaiz = document.documentElement;
-
-            if (elRaiz.getAttribute('data-theme') === 'light') {
-                elRaiz.setAttribute('data-theme','dark');
+            if (elRaiz.getAttribute('data-theme') === 'claro') {
+                elRaiz.setAttribute('data-theme', 'escuro');
+                localStorage.setItem('data-theme', 'escuro');
             } else {
-                elRaiz.setAttribute('data-theme','light');
+                elRaiz.setAttribute('data-theme', 'claro');
+                localStorage.setItem('data-theme', 'claro');
             }
 
         });
-
     </script>
 </body>
 
