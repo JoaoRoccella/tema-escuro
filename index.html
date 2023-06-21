@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Trabalhando com temas</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, odit. Maxime, aut! Necessitatibus unde
+        nemo nam non rerum, ipsam corrupti deserunt, porro tenetur quod delectus reprehenderit facilis blanditiis
+        consequatur earum?
+    </p>
+
+    <button type="button" id="btnAlterarTema">
+        Mudar
+    </button>
+
+    <script>
+        
+        document.querySelector('#btnAlterarTema').addEventListener('click', () => {
+
+            const elRaiz = document.documentElement;
+
+            if (elRaiz.getAttribute('data-theme') === 'light') {
+                elRaiz.setAttribute('data-theme','dark');
+            } else {
+                elRaiz.setAttribute('data-theme','light');
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --background-color: #fff;
+    --primary-color: #333;
+    --secondary-color: #740000;
+}
+
+[data-theme="dark"] {
+    --background-color: #333;
+    --primary-color: #fff;
+    --secondary-color: #f9cbcb;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    transition: background 1s;
+}
+
+h1,
+p,
+button {
+    margin: 20px;
+    text-align: justify;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--primary-color);
+}
+
+button {
+    padding: 5px 10px;
+}
