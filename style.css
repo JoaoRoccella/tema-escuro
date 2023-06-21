@@ -1,16 +1,22 @@
-/* Reset */
+/* Reset beeeem básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
 
+/* 
+* Estas variáveis serão aplicadas ao elemento root, ou seja, o <html> 
+*/
 :root {
     --background-color: #fff;
     --primary-color: #333;
     --secondary-color: #740000;
 }
 
+/* 
+* Estas variáveis sobrescreverão as padrão do elemento root 
+*/
 [data-theme='escuro'] {
     --background-color: #333;
     --primary-color: #fff;
@@ -19,25 +25,40 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,
+p {
+    margin: 20px;
+}
+
+p {
+    text-align: justify;
+    width: 80%;
+}
+
+button {
+    margin: 20px auto;
+    padding: 5px 10px;
+}
+
+/* 
+ * Abaixo estão as propriedades importantes
+ * nos elementos que farão a diferença 
+ * na definição de um novo tema da página
+ */
+
+body {
+    color: var(--primary-color);
     background-color: var(--background-color);
     transition: background .3s;
 }
 
-h1,
-p,
-button {
-    margin: 20px;
-}
-
 h1 {
     color: var(--secondary-color);
-}
-
-p {
-    color: var(--primary-color);
-    text-align: justify;
-}
-
-button {
-    padding: 5px 10px;
 }
