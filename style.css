@@ -11,7 +11,7 @@
     --secondary-color: #740000;
 }
 
-[data-theme="dark"] {
+[data-theme='escuro'] {
     --background-color: #333;
     --primary-color: #fff;
     --secondary-color: #f9cbcb;
@@ -20,14 +20,13 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--background-color);
-    transition: background 1s;
+    transition: background .3s;
 }
 
 h1,
 p,
 button {
     margin: 20px;
-    text-align: justify;
 }
 
 h1 {
@@ -36,6 +35,7 @@ h1 {
 
 p {
     color: var(--primary-color);
+    text-align: justify;
 }
 
 button {

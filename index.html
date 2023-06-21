@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="light">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,21 +20,7 @@
         Mudar
     </button>
 
-    <script>
-        
-        document.querySelector('#btnAlterarTema').addEventListener('click', () => {
-
-            const elRaiz = document.documentElement;
-
-            if (elRaiz.getAttribute('data-theme') === 'light') {
-                elRaiz.setAttribute('data-theme','dark');
-            } else {
-                elRaiz.setAttribute('data-theme','light');
-            }
-
-        });
-
-    </script>
+    <script src="./temas.js"></script>
 </body>
 
 </html>
