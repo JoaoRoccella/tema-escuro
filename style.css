@@ -34,12 +34,12 @@ body {
 
 h1,
 p {
-    margin: 20px;
+    margin: 20px auto;
+    width: 80%;
 }
 
 p {
     text-align: justify;
-    width: 80%;
 }
 
 button {
