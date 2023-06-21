@@ -26,7 +26,7 @@ document.querySelector('#btnAlterarTema').addEventListener('click', () => {
         elementoRaiz.setAttribute('data-theme', 'claro');
 
         // ...grava no armazenamento local essa informação.
-        localStorage.setItem('tema', 'light');
+        localStorage.setItem('tema', 'claro');
         
     }
 
